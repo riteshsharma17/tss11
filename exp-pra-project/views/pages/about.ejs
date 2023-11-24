@@ -1,0 +1,49 @@
+<%- include("../includes/header") %>
+<div class="container" style="min-height:700px;">
+<div class="row">
+    <div class="col-md-12 offset-md-2">
+    <form action="/save" method="post">
+        <h4>Add New Customer</h4>
+            <div class="my-3">
+                <label>CustomerName</label>
+                <input type="text" name="name" class="form-control">
+            </div>
+            <div class="my-3">
+                <label></label>
+                <input type="text" name="fees" class="form-control">
+            </div>
+            <div class="my-3">
+                <label>Education</label>
+                <select class="form-control" name="education">
+                <option>Select</option>
+                <option>B.A</option>
+                <option>B.Sc</option>
+                <option>M.SC</option>
+                <option>B.Ed</option>
+                <option>M.Ed</option>
+                 </select>
+            </div>
+            <div class="my-3">
+                <label>Contect</label>
+                <input type="text" name="contact"  class="form-control">
+            </div>
+            <div class="my-3">
+                <label>Address</label>
+                <textarea name="address" class="form-control"></textarea>
+            </div>
+            <div class="my-3">
+                <label>Gender</label>
+                Male<input type="radio" value="male" name="gender">
+                Female<input type="radio" value="female" name="gender">
+            </div>
+            <div class="my-3">
+                <input type="submit" class="btn btn-primary" value="submit"/>
+            </div>
+             </form>
+                </div>
+                 </div>
+                  </div>
+                </div>
+
+
+<%- include("../includes/footer") %>

@@ -1,0 +1,35 @@
+<%-include("../includes/header") %>
+<div class="container my-5" style="min-height: 600px;">
+  <div class="row">
+    <div class="col-md-12">
+      <form action="/customer/save" method="post">
+      <h2>Update customer</h2>
+      <div class="row">
+        <div class="col-md-6 offset-md-3">
+          <div class="my-2">
+            <label>Name</label>
+            <input type="text" name="name" class="form-control"/>
+          </div>
+          <div class="my-2">
+            <label>Contact-number</label>
+            <input type="text" name="contact" class="form-control"/>
+          </div> 
+          <div class="my-2">
+            <label>Gender</label></br>
+            Male<input type="radio" name="gender" value="male"/>
+            Female<input type="radio" name="gender" value="female"/>
+          </div>
+            <div class="my-2">
+              <label>Address</label>
+              <textarea name="address" class="form-control">
+              </textarea>
+            </div>
+          </br>
+          <input type="submit" value="Update" class="btn bnt-primary">
+          </div>
+        </div>
+       </form>
+      </div>
+   </div>
+</div>
+<%-include("../includes/footer") %>
